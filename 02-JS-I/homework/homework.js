@@ -134,7 +134,7 @@ function redondearNumero(num) {
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.floor(num);
+  return Math.ceil(num);
 }
 
 function numeroRandom() {
@@ -148,7 +148,15 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  if(numero<0){
+    return "Es negativo";
+  }
+    else{
+      if(numero>0){
+        return "Es positivo";
+      };
+    };
+  return false;
 }
 
 function agregarSimboloExclamacion(str) {
@@ -207,8 +215,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
-}
+  if(letra.length==1){
+    letra=letra.toUpperCase();
+    if(letra=="A"||letra=="E"||letra=="I"||letra=="O"||letra=="U"){
+      return ("Es vocal");
+    };
+  }
+  return "Dato incorrecto";
+  }
 
 
 
