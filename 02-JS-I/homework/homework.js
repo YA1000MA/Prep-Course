@@ -81,14 +81,14 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  return (num>50);
+  return (num>50);git 
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  var decimal = x/y;
-   retun Number((decimal+" ").split(".")[1]);
+  decimal = x/y;
+   return (decimal-Math.trunc(decimal));
 }
 
 function esPar(num) {
