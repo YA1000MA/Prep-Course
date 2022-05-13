@@ -87,8 +87,7 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  decimal = x/y;
-   return (decimal-Math.trunc(decimal));
+   return ((x%y);
 }
 
 function esPar(num) {
